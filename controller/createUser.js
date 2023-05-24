@@ -3,7 +3,7 @@ const PhoneNumber = require('libphonenumber-js');
 
 exports.createUser = async (req, res) => {
   try {
-    console.log("req body", req.body);
+    // console.log("req body", req.body);
     const { name, email, dob, phoneno } = req.body;
     const defaultCountryCode = "+91";
     const completePhoneNumber = defaultCountryCode + phoneno;
